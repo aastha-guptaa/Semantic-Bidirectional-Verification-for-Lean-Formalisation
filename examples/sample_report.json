@@ -1,0 +1,47 @@
+{
+  "file": "examples/SampleProof.lean",
+  "compile_verifier": {
+    "compiled": true,
+    "return_code": 0,
+    "total_errors": 0,
+    "primary_error": null,
+    "first_k_errors": [],
+    "raw_output": ""
+  },
+  "single_sorry_contract": {
+    "placeholder_count": 0,
+    "placeholders": [],
+    "satisfies_single_sorry": true
+  },
+  "back_translation": "Let G and H be groups, and let f : G -> H be a group homomorphism. Then f preserves the identity element: f(1_G) = 1_H.",
+  "semantic_rater": {
+    "scores": {
+      "semantic_match": 4,
+      "missing": 0,
+      "extra": 0,
+      "wrong": 0,
+      "exactness": 3,
+      "naturality": 4,
+      "descriptive_precision": 4
+    },
+    "bidirectional_equivalence": true,
+    "component_breakdown": {
+      "missing_components": [],
+      "wrong_components": [],
+      "extra_components": []
+    },
+    "rationale": "The formal Lean theorem states that every group homomorphism sends the group identity of G to the group identity of H, which is logically and translationally equivalent in both directions to the target statement.",
+    "repair_recommendations": []
+  },
+  "sage_gate": {
+    "sage_sm_pass": true,
+    "gate_failures": [],
+    "beq_pass": true
+  },
+  "joint_verdict": {
+    "compile": true,
+    "sage_sm": true,
+    "beq": true,
+    "overall_status": "PASS"
+  }
+}
