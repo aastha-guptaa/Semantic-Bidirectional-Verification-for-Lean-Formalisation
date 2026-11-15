@@ -6,7 +6,7 @@ A dual-signal verification and bidirectional semantic equivalence engine for Lea
 
 ## 1. Motivation: The "Typechecker Blind Spot"
 
-Modern interactive theorem provers (such as Lean 4) verify internal deductive consistency with absolute rigor. However, compiler success (`exit code 0`) only guarantees that the formal proof proves the formal theorem statement—it provides **zero guarantee that the formal statement faithfully represents the target mathematical paper**.
+Modern interactive theorem provers (such as Lean 4) verify internal deductive consistency with absolute rigor. However, compiler success (`exit code 0`) only guarantees that the formal proof proves the formal theorem statement it provides **zero guarantee that the formal statement faithfully represents the target mathematical paper**.
 
 In automated and human formalizations, subtle flaws can bypass the compiler:
 1. **Hypothesis Smuggling**: Adding unstated premises or conditions as function arguments or typeclass assumptions that restrict scope or trivialize the claim.
